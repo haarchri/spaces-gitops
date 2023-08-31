@@ -1,0 +1,17 @@
+apiVersion: aws.caas.upbound.io/v1alpha1
+kind: Cluster
+metadata:
+  name: haarchri-spaces-01
+  namespace: default
+spec:
+  parameters:
+    id: haarchri-spaces-01
+    region: eu-central-1
+    version: "1.27"
+    nodes:
+      count: 5
+      size: xlarge
+    gitops:
+      url: https://github.com/haarchri/spaces-gitops
+  writeConnectionSecretToRef:
+    name: haarchri-spaces-01-kubeconfig

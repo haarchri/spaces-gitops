@@ -1,0 +1,14 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - aws-load-balancer-controller.yaml
+  - cert-manager.yaml
+  - external-dns.yaml
+  - ingress-nginx.yaml
+  - providerconfigs.yaml
+  - providers.yaml
+  - sa-flux-kustomize-controller.yaml
+  - spaces-controlplanes.yaml
+  - universal-crossplane.yaml
+  - upbound-pull-secrets.yaml
+  - upbound-spaces.yaml

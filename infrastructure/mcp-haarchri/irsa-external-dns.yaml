@@ -1,0 +1,32 @@
+apiVersion: aws.caas.upbound.io/v1alpha1
+kind: XIRSA
+metadata:
+  name: haarchri-spaces-01-external-dns
+spec:
+  parameters:
+    deletionPolicy: Delete
+    oidcArn: arn:aws:iam::609897127049:oidc-provider/oidc.eks.eu-central-1.amazonaws.com/id/02053DCA0262B21293420E0A3B39E81B
+    oidcHost: oidc.eks.eu-central-1.amazonaws.com/id/02053DCA0262B21293420E0A3B39E81B
+    condition: StringEquals
+    policyDocument: |
+      {
+          "Version": "2012-10-17",
+          "Statement": [
+              {
+                  "Effect": "Allow",
+                  "Action": [
+                      "route53:ListResourceRecordSets",
+                      "route53:ListHostedZones"
+                  ],
+                  "Resource": "*"
+              },
+              {
+                  "Effect": "Allow",
+                  "Action": "route53:ChangeResourceRecordSets",
+                  "Resource": "arn:aws:route53:::hostedzone/Z0115025YFQ7ZQF6BJ6N"
+              }
+          ]
+      }
+    serviceAccount:
+      name: external-dns
+      namespace: external-dns
