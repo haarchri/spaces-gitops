@@ -5,8 +5,7 @@ metadata:
 spec:
   parameters:
     deletionPolicy: Delete
-    oidcArn: arn:aws:iam::609897127049:oidc-provider/oidc.eks.eu-central-1.amazonaws.com/id/02053DCA0262B21293420E0A3B39E81B
-    oidcHost: oidc.eks.eu-central-1.amazonaws.com/id/02053DCA0262B21293420E0A3B39E81B
+    id: haarchri-spaces-01
     condition: StringEquals
     policyDocument: |
       {
