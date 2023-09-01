@@ -16,3 +16,7 @@ spec:
   path: ./infrastructure/haarchri-spaces-01/external-dns
   timeout: 5m
   prune: true
+  postBuild:
+    substituteFrom:
+      - kind: ConfigMap
+        name: postbuild-settings

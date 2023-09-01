@@ -13,7 +13,7 @@ spec:
   chart:
     spec:
       chart: universal-crossplane
-      version: v1.13.2-up.1
+      version: ${uxp_version}
       sourceRef:
         kind: HelmRepository
         name: upbound-stable

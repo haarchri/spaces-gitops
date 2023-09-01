@@ -24,3 +24,7 @@ spec:
   path: ./infrastructure/haarchri-spaces-01/upbound-spaces
   timeout: 5m
   prune: true
+  postBuild:
+    substituteFrom:
+      - kind: ConfigMap
+        name: postbuild-settings

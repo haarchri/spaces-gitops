@@ -11,13 +11,13 @@ spec:
   chart:
     spec:
       chart: spaces
-      version: 1.0.0
+      version: ${spaces_version}
       sourceRef:
         kind: HelmRepository
         name: upbound-spaces
         namespace: flux-system
   values:
     ingress:
-      host: haarchri-spaces.upboundrocks.cloud
+      host: ${spaces_dns_host}
     clusterType: eks
-    account: upbound
+    account: ${spaces_upbound_account}

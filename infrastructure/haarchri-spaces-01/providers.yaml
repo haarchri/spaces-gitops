@@ -14,3 +14,7 @@ spec:
   path: ./infrastructure/haarchri-spaces-01/providers
   timeout: 5m
   prune: true
+  postBuild:
+    substituteFrom:
+      - kind: ConfigMap
+        name: postbuild-settings

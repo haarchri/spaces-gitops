@@ -16,8 +16,8 @@ spec:
         name: eks-charts
         namespace: flux-system
   values:
-    clusterName: haarchri-spaces-01
+    clusterName: ${cluster_name}
     serviceAccount:
       name: aws-load-balancer-controller
       annotations:
-        eks.amazonaws.com/role-arn: arn:aws:iam::609897127049:role/haarchri-spaces-01-aws-loadbalancer-controller
+        eks.amazonaws.com/role-arn: ${irsa_aws_load_balancer}
