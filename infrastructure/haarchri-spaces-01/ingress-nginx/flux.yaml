@@ -11,6 +11,6 @@ spec:
   sourceRef:
     kind: GitRepository
     name: haarchri-spaces-01
-  path: ./infrastructure/haarchri-spaces-01/ingress-nginx
+  path: ./infrastructure/haarchri-spaces-01/ingress-nginx/resources
   timeout: 5m
   prune: true

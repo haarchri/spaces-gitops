@@ -13,7 +13,7 @@ spec:
   sourceRef:
     kind: GitRepository
     name: haarchri-spaces-01
-  path: ./infrastructure/haarchri-spaces-01/external-dns
+  path: ./infrastructure/haarchri-spaces-01/external-dns/resources
   timeout: 5m
   prune: true
   postBuild:

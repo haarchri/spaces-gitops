@@ -21,7 +21,7 @@ spec:
   sourceRef:
     kind: GitRepository
     name: haarchri-spaces-01
-  path: ./infrastructure/haarchri-spaces-01/upbound-spaces
+  path: ./infrastructure/haarchri-spaces-01/upbound-spaces/resources
   timeout: 5m
   prune: true
   postBuild:
