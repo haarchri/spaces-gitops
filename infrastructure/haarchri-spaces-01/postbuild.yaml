@@ -11,7 +11,6 @@ data:
   cluster_name: haarchri-spaces-01
   cluster_region: eu-central-1
   external_dns_version: "6.5.6"
-  cert_manager_version: "v1.12.3"
   uxp_version: v1.13.2-up.1
   uxp_provider_helm_version: "v0.15.0"
   uxp_provider_kubernetes_version: "v0.9.0"

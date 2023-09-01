@@ -11,7 +11,3 @@ spec:
   path: ./infrastructure/haarchri-spaces-01/cert-manager
   timeout: 5m
   prune: true
-  postBuild:
-    substituteFrom:
-      - kind: ConfigMap
-        name: postbuild-settings
