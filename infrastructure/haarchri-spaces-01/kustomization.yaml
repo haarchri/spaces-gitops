@@ -12,3 +12,4 @@ resources:
   - universal-crossplane.yaml
   - upbound-pull-secrets.yaml
   - upbound-spaces.yaml
+  - postbuild.yaml
