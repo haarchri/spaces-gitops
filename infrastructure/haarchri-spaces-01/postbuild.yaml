@@ -11,9 +11,9 @@ data:
   cluster_name: haarchri-spaces-01
   cluster_region: eu-central-1
   external_dns_version: "6.5.6"
-  uxp_version: v1.13.2-up.1
+  uxp_version: v1.13.2-up.2
   uxp_provider_helm_version: "v0.15.0"
   uxp_provider_kubernetes_version: "v0.9.0"
-  spaces_version: "1.0.0"
+  spaces_version: "1.1.0"
   spaces_dns_host: haarchri-spaces.upboundrocks.cloud
   spaces_upbound_account: upbound
